@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ClientRegister_Controller">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="989.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/MarketingAgentBackground.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="-4.0" prefHeight="535.0" prefWidth="166.0" spacing="20.0">
+         <children>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#addClientPressed" prefHeight="103.0" prefWidth="142.0" text="Add Client">
+               <graphic>
+                  <ImageView fitHeight="81.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/AddClientButton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#adjustPlanPressed" prefHeight="103.0" prefWidth="142.0" text="Adjust Client Plan">
+               <graphic>
+                  <ImageView fitHeight="101.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/AdjustButton.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="10.0" top="50.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <AnchorPane fx:id="pane1" layoutX="169.0" layoutY="17.0" prefHeight="491.0" prefWidth="334.0" visible="false">
+         <children>
+            <VBox layoutY="25.0" prefHeight="380.0" prefWidth="351.0" spacing="25.0">
+               <children>
+                  <Label text="Client Name:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientFirstName" prefHeight="26.0" prefWidth="272.0" promptText="Enter client first name:" />
+                  <Label text="Client Last Name:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientLastName" promptText="Enter client last name:" />
+                  <Label text="Client ID:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientId" promptText="Enter client id:" />
+                  <Label text="Client Email:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientEmail" promptText="Enter client email:" />
+                  <Label text="Credit Card Number:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientCreditNumber" promptText="Enter client credit card number:" />
+                  <Label text="Client UserName:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clientUserName" promptText="Enter client username:" />
+                  <Label text="Client Password:" textFill="#f7c463">
+                     <VBox.margin>
+                        <Insets bottom="-20.0" top="-20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="clientPassword" promptText="Enter client password:" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Label layoutX="93.0" layoutY="2.0" text="Client Sign Up" textFill="#f7c463">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button id="LoginButton" layoutX="72.0" layoutY="507.0" mnemonicParsing="false" onAction="#nextPressed" prefHeight="42.0" prefWidth="171.0" stylesheets="@../Buttons.css" text="Next-&gt;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="553.0" layoutY="22.0" prefHeight="490.0" prefWidth="325.0">
+         <children>
+            <Label layoutX="83.0" layoutY="2.0" text="Client Sign Up" textFill="#f7c463">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="clientType" layoutX="59.0" layoutY="97.0" prefWidth="150.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
+            <VBox layoutX="35.0" layoutY="263.0" prefHeight="102.0" prefWidth="226.0" spacing="15.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="Adjust purchase plan" textFill="#f7c463">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PurchasePlan" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="No purchase plan" textFill="#f7c463" toggleGroup="$PurchasePlan">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></RadioButton>
+               </children>
+            </VBox>
+            <Button id="LoginButton" layoutX="75.0" layoutY="385.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="133.0" stylesheets="@../Buttons.css" text="Finish">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="44.0" layoutY="59.0" text="Choose client type:" textFill="#f7c463">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="adjustPane" layoutX="207.0" layoutY="63.0" prefHeight="380.0" prefWidth="274.0">
+         <children>
+            <Label layoutX="45.0" layoutY="14.0" text="Adjust Client Plan" textFill="#f7c463">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="71.0" text="Please enter client id:" textFill="#f7c463">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adjustClientId" layoutX="40.0" layoutY="110.0" promptText="Enter Client Id:" />
+            <Label layoutX="60.0" layoutY="162.0" text="Choose Plan:" textFill="#f7c463">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="adjustclientPlan" layoutX="45.0" layoutY="201.0" prefWidth="150.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Button id="LoginButton" layoutX="53.0" layoutY="285.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="124.0" stylesheets="@../Buttons.css" text="Finish">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

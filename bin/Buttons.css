@@ -1,0 +1,76 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*.button:hover{
+	
+	-fx-font-weight: bold;
+	-fx-background-color:  #0066cc;
+	-fx-border-color:  #0066cc;
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-border-width: 3;	
+}*/
+
+#okButton{
+	
+	-fx-font-weight: bold;
+	-fx-background-color:  #0066cc;
+	-fx-border-color:  #0066cc;
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-border-width: 3;	
+}
+#okButton:hover{
+	
+	-fx-font-weight: bold;
+	-fx-background-color:  #0066cc;
+	-fx-border-color:  #000000;
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-border-width: 3;	
+}
+#LoginButton{
+	
+	-fx-font-weight: bold;
+	-fx-background-color:  #00b5cc;	
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-border-width: 3;	
+	}
+	
+#LoginButton:hover{	
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 ); 
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+	-fx-font-weight: bold;
+	-fx-background-color:  #00b5cc;
+	-fx-border-color:  #0066cc;
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-border-width: 3;
+	
+}
+
+#CreateAccountButton:hover{
+	
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 ); 
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+	-fx-font-weight: bold;
+	-fx-background-color:  #00b5cc;
+	-fx-border-color:  #0066cc;
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-border-width: 3;	
+}
+
+#CreateAccountButton{
+	
+	-fx-font-weight: bold;
+	-fx-background-color:  #00b5cc;	
+	-fx-border-radius: 20;
+	-fx-background-radius: 22;
+	-fx-font-size: 16;
+	-fx-border-width: 3;	
+	}
