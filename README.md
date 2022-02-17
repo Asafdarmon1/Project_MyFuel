@@ -1,2 +1,2 @@
 # Project_MyFuel
-Semester Project
+Gas station management software, product inventory management and refueling.
